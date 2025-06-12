@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">SAM-G TECH HUB</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <p>Hello, I'm</p>
+    <h1>Samuel <span>Gacheru</span></h1>
+    <h2>Software Developer | Problem Solver</h2>
+    <p>
+      I'm a passionate Computer Science graduate with a strong foundation in software development, problem-solving, and technology-driven innovation. I specialize in building efficient, scalable, and user-friendly applications.
+    </p>
+    <div class="social-icons">
+      <a href="https://wa.me/254753396132" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/me/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/sammy-cheru-5a8251342" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/samuelgacheru254" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <img src="5927266344535967641.jpg" alt="Samuel Gacheru" />
+  </section>
+
+  <!-- Why Choose Me Section -->
+  <section>
+    <h1>Why Choose Me</h1>
+    <p>✓ I build responsive, fast, and SEO-friendly websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+    <p>✓ Creating secure and scalable APIs, databases, and server logic using Node.js, Express, or PHP.</p>
+    <p>✓ Helping clients plan, scope, and optimize web projects with expert advice and technical guidance.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a developer passionate about building web applications that are both beautiful and functional. I enjoy solving problems and helping people bring their ideas to life with clean, modern code.</p>
+    <div class="hire-me-wrapper">
+      <a href="#contact" class="hire-me-btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>One of my satisfied client projects.</p>
+      <a href="https://samuelgacheru254.github.io/tropax-web-test/" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Check out my GitHub account for more.</p>
+      <a href="https://github.com/samuelgacheru254" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mqabqkvg" method="POST" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p style="text-align: center; padding: 20px;">&copy; 2025 Samuel Gacheru</p>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const menu = document.querySelector('.nav-links');
+    const toggle = document.querySelector('.menu-toggle');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
